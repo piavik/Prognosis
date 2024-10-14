@@ -32,3 +32,19 @@ pip install -r requirements.txt
 ```bash
 streamlit run app/main.py
 ```
+
+## Docker container
+
+### Create image
+
+```bash
+docker build -t prognosis-app  .
+```
+
+### Run container
+
+```bash
+docker run -d -p 8089:8089 --name prognosis-app-container prognosis-app 
+```
+
+The application will be available at http://127.0.0.1:8089.
