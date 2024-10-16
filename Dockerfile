@@ -2,9 +2,10 @@
 FROM python:3.12-slim
 
 # Set environment variables
-ENV PYTHONUNBUFFERED=1
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONPATH=/app \
+    DOCKER_MODEL_PATH=/app/models/
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -17,8 +18,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application code into the container
 COPY app/ /app/app/
-
-ENV DOCKER_MODEL_PATH=/app/models/
 
 # Copy the models into the container
 COPY models/ ${DOCKER_MODEL_PATH}
