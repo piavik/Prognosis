@@ -4,7 +4,7 @@ from services.load_models import load_model, predict
 from services.parse_inputs import get_user_input
 
 
-model = load_model('logistic_regression_model.pkl')
+model = load_model('logistic_regression_model_new.pkl')
 expected_feature_order = model.feature_names_in_
 
 
