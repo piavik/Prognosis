@@ -1,2 +1,7 @@
+.git
+.venv
+.DS_Store
+*.md
+datasets
 
 
