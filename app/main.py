@@ -1,8 +1,9 @@
 import streamlit as st
 
 logistic_regression = st.Page("predictions/logistic_regression.py", title="Logistic Regression", icon=":material/dashboard:")
-random_forest       = st.Page("predictions/random_forest.py", title="Random Forest", icon=":material/dashboard:")
+random_forest       = st.Page("predictions/random_forest_model.py", title="Random Forest", icon=":material/dashboard:")
 mlp                 = st.Page("predictions/mlp_model.py", title="Neural Network", icon=":material/dashboard:")
+XGB                 = st.Page("predictions/mlp_xgb.py", title="Neural Network with XGB", icon=":material/dashboard:")   
 
 experiments      = st.Page("eda/experiments.py", title="Experiments", icon=":material/add_circle:")
 primary_analysis = st.Page("eda/primary_analysis.py", title="Primary analysis", icon=":material/add_circle:")

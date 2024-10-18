@@ -9,10 +9,9 @@ expected_feature_order = model.feature_names_in_
 
 
 # Title and description
-st.title("Random Forest Classifier Prediction App")
+st.title("Random Forest Classifier")
 st.write("""
 This app uses a trained Random Forest model to make predictions.
-Please input the required features to get a prediction.
 """)
 
 # Get user input

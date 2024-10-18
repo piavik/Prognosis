@@ -10,6 +10,9 @@ expected_feature_order = model.feature_names_in_
 
 # Title and description
 st.title("Logistic regression")
+st.write("""
+This app uses a trained Logistic Regression model to make predictions.
+""")
 
 # Get user input
 user_input = get_user_input()

@@ -26,4 +26,5 @@ def get_user_input():
     }
     print(data)
     features = pd.DataFrame(data, index=[0])
+    features.drop(columns=['service_failure_count', 'download_over_limit'], inplace=True)
     return features
