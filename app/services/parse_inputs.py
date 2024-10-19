@@ -24,7 +24,7 @@ def get_user_input():
         'upload_avg': st.slider('upload_avg', min_value=0.0, max_value=500.0, value=20.0),
         'download_over_limit': st.slider('download_over_limit', min_value=0.0, max_value=100.0, value=0.0),
     }
-    print(data)
+    # print(data)
     features = pd.DataFrame(data, index=[0])
     features.drop(columns=['service_failure_count', 'download_over_limit'], inplace=True)
     return features

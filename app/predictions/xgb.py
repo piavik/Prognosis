@@ -4,14 +4,14 @@ from services.load_models import load_model, predict
 from services.parse_inputs import get_user_input
 
 
-model = load_model('mlp_model.pkl')
+model = load_model('xgb_model.pkl')
 expected_feature_order = model.feature_names_in_
 
 
 # Title and description
-st.title("Multilayer Perceptron (MLP)")
+st.title("XGBoost")
 st.write("""
-This app uses a trained Neural Network model to make predictions.
+This app uses a trained XGBoost model to make predictions.
 """)
 
 
