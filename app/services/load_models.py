@@ -26,4 +26,4 @@ def predict(model, user_input):
     st.write(f"Predicted Class: {class_names[int(prediction[0])]}")
 
     st.subheader('Prediction Probability:')
-    st.write(f"Probability: {prediction_proba[0][int(prediction[0])]:.2f}")
+    st.write(f"Probability: {prediction_proba[0][int(prediction[0])]*100:.2f}%")
