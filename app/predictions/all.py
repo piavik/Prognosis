@@ -42,7 +42,7 @@ user_input = user_input[expected_feature_order]
 if st.button('Predict Churn'):
     # predict(model, user_input)
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
         st.write(f'**LinearRegression**')
@@ -62,4 +62,9 @@ if st.button('Predict Churn'):
     with col4:
         st.write(f'**XGBoost**')
         model = load_model('xgb_model.pkl')
+        predict(model, user_input)
+
+    with col5:
+        st.write(f'**SVM**')
+        model = load_model('svm_model.pkl')
         predict(model, user_input)

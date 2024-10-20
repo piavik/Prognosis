@@ -4,6 +4,7 @@ logistic_regression = st.Page("predictions/logistic_regression.py", title="Logis
 random_forest       = st.Page("predictions/random_forest.py", title="Random Forest", icon=":material/dashboard:")
 mlp                 = st.Page("predictions/mlp.py", title="Neural Network", icon=":material/dashboard:")
 xgb                 = st.Page("predictions/xgb.py", title="XGBoost", icon=":material/dashboard:")   
+svm                 = st.Page("predictions/svm.py", title="SVM", icon=":material/dashboard:") 
 
 all                 = st.Page("predictions/all.py", title="All models", icon=":material/dashboard:")   
 
@@ -13,7 +14,7 @@ primary_analysis = st.Page("eda/primary_analysis.py", title="Primary analysis", 
 
 pg = st.navigation(
     {
-        "Make predictions": [random_forest, logistic_regression, mlp, xgb],
+        "Make predictions": [random_forest, logistic_regression, mlp, xgb, svm],
         "EDA": [primary_analysis, experiments],
         "Compare predictions": [all],
     }
