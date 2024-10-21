@@ -9,14 +9,15 @@ svm                 = st.Page("predictions/svm.py", title="SVM", icon=":material
 all                 = st.Page("predictions/all.py", title="All models", icon=":material/dashboard:")   
 
 
-experiments      = st.Page("eda/experiments.py", title="Experiments", icon=":material/add_circle:")
-primary_analysis = st.Page("eda/primary_analysis.py", title="Primary analysis", icon=":material/add_circle:")
+# experiments      = st.Page("eda/experiments.py", title="Experiments", icon=":material/add_circle:")
+# primary_analysis = st.Page("eda/primary_analysis.py", title="Primary analysis", icon=":material/add_circle:")
 
 pg = st.navigation(
     {
-        "Make predictions": [random_forest, logistic_regression, mlp, xgb, svm],
-        "EDA": [primary_analysis, experiments],
         "Compare predictions": [all],
+        "Make predictions": [random_forest, logistic_regression, mlp, xgb, svm],
+        # "EDA": [primary_analysis, experiments],
+
     }
 )
 
