@@ -15,7 +15,7 @@ all                 = st.Page("predictions/all.py", title="All models", icon=":m
 pg = st.navigation(
     {
         "Compare predictions": [all],
-        "Make predictions": [random_forest, logistic_regression, mlp, xgb, svm],
+        "Make predictions": [random_forest, logistic_regression, mlp, xgb] #, svm],
         # "EDA": [primary_analysis, experiments],
 
     }
