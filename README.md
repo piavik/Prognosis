@@ -1,50 +1,15 @@
-# Project Prognosis
+# Прогнозування Відтоку Клієнтів для Телекомунікаційної компанії
 
-# Installation
+Метою даного проекту є розробка прогностичної моделі для ідентифікації ймовірності припинення клієнтами користування телекомунікаційними послугами на основі історичних даних про клієнтів.
 
-## Manual
+## Опис Даних
+Надається набір даних, який включає інформацію про клієнтів телекомунікаційної компанії: демографічні характеристики, історію використання послуг, тарифні плани, дані про відток(Churn).
 
-### Setting Up the Virtual Environment
+# Обробка вхідних даних
 
-```bash
-# Create a virtual environment
-python -m venv venv
+Включає наступні етвпи:
+* Завантаження вхадних даних
+* Перевірка записів на дублікати 
+* Перевірка на пусті значення і їх обробка: або заміна на нульові значення, або видалення відповідних даних
+* Аналіз кореляції між вхідними параметрами і цільовим значенням
 
-# Activate the virtual environment (Unix/Linux/Mac)
-source venv/bin/activate
-
-# Activate the virtual environment (Windows)
-venv\Scripts\activate
-```
-
-### Installing Dependencies
-
-```bash
-# Upgrade pip
-pip install --upgrade pip
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Run
-
-```bash
-streamlit run app/main.py
-```
-
-## Docker container
-
-### Create image
-
-```bash
-docker build -t prognosis-app  .
-```
-
-### Run container
-
-```bash
-docker run -d -p 8089:8089 --name prognosis-app-container prognosis-app 
-```
-
-The application will be available at http://127.0.0.1:8089.
