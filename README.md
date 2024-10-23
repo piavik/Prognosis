@@ -80,10 +80,10 @@ docker run -d -p 8089:8089 --name prognosis-app-container prognosis-app
 The application will be available at http://127.0.0.1:8089
 
 # Development team
-1. Team Lead [Олексій П'явка](https://github.com/piavik) 
-2. Scrum Master [Назар Сало](https://github.com/peakodev) 
-3. Developer [Олександр Полшведкін](https://github.com/Polshvedkin-Aleksandr) 
-4. Developer [Шгор Гієвський](https://github.com/GievskiyIgor) 
+1. Team Lead: [Олексій П'явка](https://github.com/piavik) 
+2. Scrum Master: [Назар Сало](https://github.com/peakodev) 
+3. ML Engineer: [Олександр Полшведкін](https://github.com/Polshvedkin-Aleksandr) 
+4. ML Engineer: [Ігор Гієвський](https://github.com/GievskiyIgor) 
 
 # Онлайн версія 
 
